@@ -28,7 +28,7 @@ Projeto moderno de e-commerce voltado para a venda de cursos online. Construído
 ### Roteamento
 - **React Router DOM v7**: Navegação entre páginas SPA com base em rotas.
 
-## 📦 Scripts disponíveis
+## Scripts disponíveis
 
 | Comando        | Descrição                                     |
 |----------------|-----------------------------------------------|
@@ -37,10 +37,10 @@ Projeto moderno de e-commerce voltado para a venda de cursos online. Construído
 | `npm run lint` | Analisa o código com ESLint.                  |
 | `npm run preview` | Pré-visualiza o build de produção.         |
 
-## 🧪 Testes
+## Testes
 - **Vitest**: Framework de testes moderno e rápido, com integração nativa ao Vite.
 
-## 💅 Qualidade de Código
+## Qualidade de Código
 - **ESLint**: Padronização e boas práticas no código.
 - **Typescript ESLint Plugin**: Suporte avançado para análise com TypeScript.
 - **React Hooks & React Refresh Plugins**: Regras e hot reload eficiente durante o desenvolvimento.
@@ -48,6 +48,11 @@ Projeto moderno de e-commerce voltado para a venda de cursos online. Construído
 ## 🛠️ Plugins e Tipagens
 - `vite-plugin-svgr`: Suporte para importar SVGs como componentes React.
 - `@types/*`: Tipagens para bibliotecas utilizadas, garantindo suporte total ao TypeScript.
+
+## Imagens Disclaimer
+- As imagens utilizadas tiveram apenas propósito acadêmico e pessoal.
+  Caso você seja o dono dessas imagens, e quiser que eu as remova,
+  entre em contato através do email manuella.rodrigues.dev@gmail.com.
 
 ## 💻 Preview da Home
 
