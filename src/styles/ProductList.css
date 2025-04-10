@@ -1,0 +1,126 @@
+/* Contêiner do Swiper */
+.swiper-container {
+  position: relative;
+  padding: 0 60px; /* Espaço para as setas */
+}
+
+/* Estilo das setas */
+.swiper-button-next-custom,
+.swiper-button-prev-custom {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2); /* Fundo branco transparente */
+  backdrop-filter: blur(10px); /* Efeito de desfoque */
+  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
+  border: 2px solid #bfdbfe; /* Borda azul claro */
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2; /* Z-index alto para garantir que fique acima de tudo */
+  box-shadow: 0 0 20px rgba(0, 0, 255, 1), 0 0 40px rgba(0, 0, 255, 1); /* Sombra azul neon forte */
+  transition: all 0.3s ease;
+}
+
+/* Posicionamento da seta direita */
+.swiper-button-next-custom {
+  right: 0px; /* Posiciona fora do contêiner */
+}
+
+/* Posicionamento da seta esquerda */
+.swiper-button-prev-custom {
+  left: 0px; /* Posiciona fora do contêiner */
+}
+
+/* Ícones das setas */
+.swiper-button-next-custom::after,
+.swiper-button-prev-custom::after {
+  font-family: "swiper-icons";
+  font-size: 24px;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Sombra no texto para efeito brilhante */
+}
+
+.swiper-button-next-custom::after {
+  content: "→"; /* Seta direita */
+}
+
+.swiper-button-prev-custom::after {
+  content: "←"; /* Seta esquerda */
+}
+
+/* Efeito de hover */
+.swiper-button-next-custom:hover,
+.swiper-button-prev-custom:hover {
+    background: linear-gradient(
+        145deg,
+        #1e3a8a,
+        #3b82f6
+    ); /* Gradiente azul no hover */
+    box-shadow: 0 0 25px rgba(30, 58, 138, 1), 0 0 50px rgba(59, 130, 246, 1); /* Sombra azul no hover */
+    transform: scale(1.1) translateY(-50%); /* Efeito de zoom no hover */
+}
+
+/* Responsividade para mobile */
+@media (max-width: 500px) {
+  .swiper-container {
+    padding: 0 20px; /* Reduz ainda mais o espaço para as setas em telas menores */
+  }
+
+  .swiper-button-next-custom,
+  .swiper-button-prev-custom {
+    width: 50px;
+    height: 50px;
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta o posicionamento vertical */
+  }
+
+  .swiper-button-next-custom {
+    right: 18%; /* Aproxima a seta "próxima" da borda direita */
+  }
+
+  .swiper-button-prev-custom {
+    left: 18%; /* Aproxima a seta "anterior" da borda esquerda */
+  }
+
+  .swiper-button-next-custom::after,
+  .swiper-button-prev-custom::after {
+    font-size: 20px;
+  }
+}
+
+.custom-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: rgba(0, 255, 255, 0.8); /* Bolinha com opacidade ciano maior */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Sombra ciano */
+}
+
+/* Bolinha ativa */
+.custom-pagination .swiper-pagination-bullet-active {
+    background: #0000ff; /* Azul brilhante */
+    width: 16px;
+    height: 16px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 40px rgba(0, 255, 255, 1); /* Sombra ciano neon */
+}
+
+/* Estilos para dark mode */
+@media (prefers-color-scheme: dark) {
+    .custom-pagination .swiper-pagination-bullet {
+        background: rgba(255, 255, 0, 0.5); /* Bolinha com opacidade amarela */
+        box-shadow: 0 0 10px rgba(255, 255, 0, 0.8); /* Sombra amarela */
+    }
+
+    .custom-pagination .swiper-pagination-bullet-active {
+        background: #ffff00; /* Amarelo brilhante */
+        box-shadow: 0 0 20px rgba(255, 255, 0, 1), 0 0 40px rgba(255, 255, 0, 1); /* Sombra amarela neon */
+    }
+}
